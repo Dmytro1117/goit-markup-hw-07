@@ -23,7 +23,7 @@
     margin-left: auto;
     margin-right: auto;
     background-image:
-    linear-gradient($gradient-color),
-    ($gradient-color),
+    linear-gradient($gradient-color,
+    $gradient-color),
     url(../img/hero.jpg);
 }
