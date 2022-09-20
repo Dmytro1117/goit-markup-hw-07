@@ -1,0 +1,94 @@
+.team__name {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 10px;
+}
+
+
+.team {
+    background-color: $background-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.internet__link,
+.internet__face,
+.internet__twit,
+.internet__insta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $clients-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: color 250ms $animation,
+        background-color 250ms $animation;
+}
+
+.network__insta:hover,
+.network__twit:hover,
+.network__face:hover,
+.network__linked:hover,
+.network__insta:focus,
+.network__twit:focus,
+.network__face:focus,
+.network__linked:focus,
+.internet__link:focus,
+.internet__face:focus,
+.internet__twit:focus,
+.internet__insta:focus,
+.internet__link:hover,
+.internet__face:hover,
+.internet__twit:hover,
+.internet__insta:hover {
+    color: $background-color-h1;
+    background-color: $accent-color;
+}
+
+
+.internet__link:focus,
+.internet__face:focus,
+.internet__twit:focus,
+.internet__insta:focus {
+    outline: none;
+}
+
+.svg {
+    fill: currentColor;
+    width: 22px;
+    height: 22px;
+}
+
+.internet__insta {
+    margin-right: 10px;
+    margin-left: 32px;
+}
+
+.team__ul {
+    display: flex;
+}
+
+.team__item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.team__item {
+    width: 270px;
+    padding-bottom: 30px;
+    margin-right: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}

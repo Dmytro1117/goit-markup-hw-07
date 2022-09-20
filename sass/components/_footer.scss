@@ -1,0 +1,139 @@
+.footerr {
+    width: 1600px;
+    height: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $hero-color;
+}
+
+.container--box {
+    display: flex;
+    align-items: baseline;
+}
+
+.letter__field {
+    display: flex;
+    align-items: center;
+}
+
+.network{
+    display: flex;
+    width: 205px;
+    flex-wrap: wrap;
+    margin-left: 70px;
+}
+
+.network__ul {
+    display: flex;
+}
+
+
+.footerr .logo {
+    color: $background-color-h1;
+}
+
+.letter__input {
+    outline: none;
+}
+
+.letter__input:focus {
+    border: 1px solid $accent-color;
+    transition: border-color 250ms $animation;
+}
+
+
+.network__title {
+    color: $background-color-h1;
+    font-weight: 700;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.adress {
+    color: $background-color-h1;
+    font-style: normal;
+    line-height: 1.7;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.network__insta,
+.network__twit,
+.network__face,
+.network__linked {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $background-color-h1;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $icons;
+    transition: background-color 250ms $animation;
+}
+
+.internet {
+    display: flex;
+   
+}
+
+.network__insta,
+.network__face,
+.network__twit,
+.internet__twit,
+.internet__face{
+    margin-right: 10px;
+}
+
+.internet__link {
+    margin-right: 32px;
+}
+
+
+
+.letter {
+    width: 570px;
+    margin-top: 72px;
+    margin-left: 93px;
+}
+
+.letter__input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $hero-color;
+}
+
+.letter__title {
+    margin: 0px 0px 20px;  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $background-color-h1;
+}
+
+.letter__svg {
+   margin-left: 10px;
+   width: 24px;
+   height: 24px;
+}
+
+.network__insta,
+.network__twit,
+.network__face,
+.network__linked {
+    outline: none;
+    
+}
+
+.letter__field .letter__input:focus {
+    color: white;
+}
