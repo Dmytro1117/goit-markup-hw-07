@@ -442,11 +442,11 @@ input:focus-within ~ .modal__email {
 
 .modal__textarea:focus,
 .modal__input:focus,
-.href:focus {
+.modal__link:focus {
     border: 1px solid var(--accent-color);
 }
 
-.href,
+.modal__link,
 .modal__check,
 .modal__textarea,
 .modal__input {
@@ -454,7 +454,7 @@ input:focus-within ~ .modal__email {
     transition: border-color 250ms var(--animation);
 }
 
-.href {
+.modal__link {
     color: var(--accent-color);
     text-decoration: underline;
 }
@@ -761,7 +761,7 @@ input:focus-within ~ .modal__email {
 /* Button */
 
 
-.button--primary{
+.button.button--primary {
     color: var(--background-color-h1);
     background-color: var(--accent-color);
     min-width: 216px;
@@ -833,9 +833,10 @@ input:focus-within ~ .modal__email {
     filter 250ms var(--animation);
 }
 
+
+
 .letter__button:hover,
 .letter__button:focus,
-.letter__button:hover,
 .form-but:hover,
 .form-but:focus,
 .button:hover,
@@ -845,22 +846,25 @@ input:focus-within ~ .modal__email {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.button.active {
+.button--active {
     color: var(--background-color-h1);
     background-color: var(--accent-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.flex-inp {
+
+.flex__inp {
     margin-right: 8px;
 }
 
-.botton-flex {
+.ul {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     
 }
+
+
 
 .letter__button:active,
 .button:active {
@@ -873,23 +877,23 @@ input:focus-within ~ .modal__email {
 /* Portfolio */
 
 
-.ul-flex {
+.project__ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;  
 }
 
-.animation-img {
+.project__animation {
     position: relative;
     overflow: hidden;
 }
 
-.flex-element:hover .animation-overlay {
+.project__item:hover .project__overlay {
     opacity: 1;
     transform: translateY(0);
 }
 
-.animation-text {
+.project__about {
     display: inline-block;
     padding: 63px 24px; 
     margin: 0; 
@@ -900,7 +904,7 @@ input:focus-within ~ .modal__email {
     color: var(--background-color-h1);
 }
 
-.animation-overlay {
+.project__overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -913,11 +917,11 @@ input:focus-within ~ .modal__email {
     background-color: var(--animation-color);
 }
 
-.text-animation {
+.project__topic {
     padding: 20px 24px;
 }
 
-.flex-element {
+.project__item {
     margin-bottom: 30px;
     position: relative;
     width: 370px;
@@ -935,36 +939,37 @@ input:focus-within ~ .modal__email {
     border-left-color: var(--border-color);
 }
 
-.flex-element:hover {
+.project__item:hover {
     box-shadow: 1px 4px 6px rgba(181, 73, 73, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.ul-outline:focus {
+.project__link:focus {
     box-shadow: 1px 4px 6px rgba(181, 73, 73, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);   
 }
 
 
-.ul-outline:focus .animation-overlay {
+.project__link:focus .project__overlay {
     opacity: 1;
     transform: translateY(0);
 }
 
-.ul-outline {
+.project__link {
     outline: none;
 }
 
-.flex-element:nth-last-child(-n+3) {
+.project__item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
-.flex-element:hover .animation-overlay {
+.project__item:hover .project__overlay {
     opacity: 1;
 }
 
+.project__title,
 .project__name {
     color: var(--title-text-color);
     font-size: 18px;
@@ -979,7 +984,7 @@ input:focus-within ~ .modal__email {
     padding-bottom: 94px;
 }
 
-.project-name {
+.project__paragraph {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
